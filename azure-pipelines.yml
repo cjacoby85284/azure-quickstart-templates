@@ -17,7 +17,7 @@ steps:
   inputs:
     SourceFolder: '101-webapp-linux-managed-mysql'
     Contents: '**'
-    TargetFolder: '($Build.ArtifactStagingDirectory)'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
